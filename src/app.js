@@ -67,7 +67,7 @@ app.get('/weather',(req,res)=>{
                 forecast:forecastData.summary,
                 temperature:forecastData.temperature,
                 rain:forecastData.rain,
-                address:req.query.address
+                address:location
             })
             console.log(location)
             console.log(forecastData)
